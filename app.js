@@ -20,7 +20,6 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/goals", goalRoutes);
 app.use("/api/summary", summaryRoutes); 
 
-// ADD THIS HEALTH ENDPOINT ↓
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', server: 'Running' });
 });
